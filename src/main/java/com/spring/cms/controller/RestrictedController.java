@@ -17,6 +17,6 @@ public class RestrictedController {
 
 	@GetMapping("/adminPanel")
 	public String adminPanel(HttpServletRequest request, Model model) {
-		return "admin/general/panel";
+		return "admin/general/adminDashboard";
 	}
 }
