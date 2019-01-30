@@ -65,7 +65,7 @@
                             <span>Page</span>
                         </li>
                         <li>
-                            <a href="#">
+                            <a id="editModal" href="#">
                                 <i class="far fa-edit"></i>
                                 <span style="font-weight: 900;">Edit Page</span>
                             </a>
@@ -114,3 +114,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js"></script>  -->
     <script src="/resources/js/admin/adminSidebar.js"></script>
+    <script type="text/javascript">
+    $("#editModal").click(function(){
+    	console.log("pop-up");
+    	$('#fluidModalRightSuccess').modal();
+    });
+    </script>

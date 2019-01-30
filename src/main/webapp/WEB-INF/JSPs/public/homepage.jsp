@@ -19,6 +19,9 @@
 </head>
 
 <body>
+	<sec:authorize access="hasAnyRole('ROLE_ADMIN')">
+		<c:import url="../admin/home/homeEditModal.jsp"></c:import>
+	</sec:authorize>
     <sec:authorize access="hasAnyRole('ROLE_ADMIN')">
         <c:import url="../admin/general/adminSidebar.jsp"></c:import>
     </sec:authorize>
